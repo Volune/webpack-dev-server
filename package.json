@@ -46,6 +46,6 @@
     "ssl/"
   ],
   "scripts": {
-    "prepublish": "webpack ./client/live.js client/live.bundle.js --colors --config client/webpack.config.js -p && webpack ./client/index.js client/index.bundle.js --colors --config client/webpack.config.js -p"
+    "prepublish": "webpack ./client/live.js client/live.bundle.js --colors --config client/webpack.config.js -p && webpack ./client/index.js client/index.bundle.js --colors --config client/webpack.config.js -p && webpack ./client/sockjs.js client/sockjs.bundle.js --colors --config client/webpack.sockjs.config.js -p"
   }
 }
